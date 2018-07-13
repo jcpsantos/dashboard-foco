@@ -8,12 +8,32 @@
     -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
 .blue-bg {
     color: #fff;
-    background: #1e88e5;
-    background-color: #1e88e5;
+    background: #81d4fa;
+    background-color: #81d4fa;
+}
+
+
+.red-bg {
+    color: #fff;
+    background: #ef5350 ;
+    background-color: #ef5350;
+}
+
+.purple-bg{
+    color: #fff;
+    background: #ab47bc;
+    background-color: #ab47bc;
+}
+
+.green-bg{
+    color: #fff;
+    background: #4db6ac;
+    background-color: #4db6ac;
 }
 
 .info-box .title {
@@ -25,9 +45,38 @@
 
 .icon-box{
     z-index: 2;
-    margin-left: 15px;
+    left: 12px;
     position: absolute;
-    fill: #2962ff;
-    top: 5px;
-    fill-opacity: 0.7;
+    top: 80px;
+    fill-opacity: 0.5;
+}
+
+.icon-blue{
+    fill: #33b7e6;
+}
+
+.icon-red{
+    fill: #d0362b;
+}
+
+.icon-purple{
+    fill: #942dd0;
+}
+
+.icon-green{
+    fill: #b9efe2;
+}
+
+.box{
+    margin-top: 5vh;
+}
+
+/*Charts - Crescimento x Redução */
+.h2-title{
+    color: #7d7c7c;
+}
+
+/*Charts - Contato*/
+.card-chart{
+    margin-top: 5vh;
 }
