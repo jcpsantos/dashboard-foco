@@ -1,3 +1,16 @@
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+/*header*/
+header{
+    margin-top: 2vh;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
 /*Box-List*/
 
 .info-box {
@@ -5,9 +18,6 @@
     margin-bottom: 30px;
     padding: 20px;
     color: white;
-    -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
 
@@ -37,7 +47,7 @@
 }
 
 .info-box .title {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 20px;
@@ -47,12 +57,12 @@
     z-index: 2;
     left: 12px;
     position: absolute;
-    top: 80px;
-    fill-opacity: 0.5;
+    top: 0px;
+    fill-opacity: 0.3;
 }
 
 .icon-blue{
-    fill: #33b7e6;
+    fill: #58c1e6;
 }
 
 .icon-red{
@@ -71,6 +81,10 @@
     margin-top: 5vh;
 }
 
+.font-box-mobile{
+   font-weight: bold;
+}
+
 /*Charts - Crescimento x Redução */
 .h2-title{
     color: #7d7c7c;
@@ -79,4 +93,30 @@
 /*Charts - Contato*/
 .card-chart{
     margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    .margin-mobile{
+        margin-top: 2vh;
+    }
+
+    .row-mobile{
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1025px){
+    .h2-title{
+        font-size: 1.0rem;
+    }
+
+    .info-box .title{
+        font-size:1.0rem;
+    }
+
+    .font-box-mobile{
+        font-size:0.6rem;
+    }
+
 }

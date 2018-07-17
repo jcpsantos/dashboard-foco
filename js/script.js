@@ -1,4 +1,4 @@
-var pieData = {
+/*var pieData = {
     labels: ["Agências", "Hoteis"],
     datasets: [
         {
@@ -10,7 +10,7 @@ var pieData = {
             backgroundColor: "rgb(54, 162, 235)"
         }
     ]
-};
+};*/
 
 //new Chart(document.getElementById("pie").getContext("2d")).Pie(pieData);
 
@@ -37,3 +37,40 @@ new Chart(document.getElementById("line"),{
             "lineTension":0.1}]},
             "options":{}
 });
+
+var options = {
+      useEasing: false, 
+      useGrouping: false,  
+    };
+    var mensal1 = new CountUp('mensalidade1', 0, 578, 0, 2.5, options);
+    var mensal2 = new CountUp('mensalidade2', 0, 176, 0, 2.5, options)
+    var mensal3 = new CountUp('mensalidade3', 0, 1000, 0, 2.5, options)
+
+    var cancel1 = new CountUp('cancelado1', 0, 578, 0, 2.5, options)
+    var cancel2 = new CountUp('cancelado2', 0, 176, 0, 2.5, options)
+    var cancel3 = new CountUp('cancelado3', 0, 1000, 0, 2.5, options)
+
+    var susp1 = new CountUp('suspenso1', 0, 578, 0, 2.5, options)
+    var susp2 = new CountUp('suspenso2', 0, 176, 0, 2.5, options)
+    var susp3 = new CountUp('suspenso3', 0, 1000, 0, 2.5, options)
+
+    var rec1 = new CountUp('recuperado1', 0, 578, 0, 2.5, options)
+    var rec2 = new CountUp('recuperado2', 0, 176, 0, 2.5, options)
+    var rec3 = new CountUp('recuperado3', 0, 1000, 0, 2.5, options)
+    if (!mensal1.error) {
+      mensal1.start();
+      mensal2.start();  
+      mensal3.start();
+      cancel1.start();
+      cancel2.start();  
+      cancel3.start();
+      susp1.start();
+      susp2.start();  
+      susp3.start();
+      rec1.start();
+      rec2.start();  
+      rec3.start();
+    } else {
+      console.error(mensal1.error);    
+    }
+ 
